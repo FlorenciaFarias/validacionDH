@@ -1,0 +1,79 @@
+main .main-section{
+    display: flex;
+    justify-items: flex-start;
+    padding: 10px;
+       
+}
+.main-section h1{
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin: auto;
+    padding: 1px;
+    
+}
+form{
+    width: 24%;
+    margin: auto;
+    
+  
+}
+#form-login #form-register, .section-content-form{
+    
+    display: flex;
+    padding: 38px 27px 45px;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+}
+.img-form{
+    width: 95%;
+    align-self: center;
+    padding: 0.2rem;
+    margin-bottom: 2rem;
+}
+.img-logo-form{
+    align-self: center;
+    width: 52%;
+    margin-top: 1.1rem;
+}
+#form-login #form-register, input{
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    border: 0.5px solid rgba(109, 103, 103, 0.473);
+    margin-bottom: 0.6rem;
+    
+}
+
+form .form-button{
+    border: 0.2rem solid black;
+    margin-top: 0.8rem;
+    margin-bottom: 1px;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    color: rgb(255, 255, 255);
+    background-color: hsl(237, 46%, 49%);
+    border: 0;
+    font-size: 17px;
+    
+}
+.section-content-form button:hover{
+    
+    background: rgb(30, 45, 135);
+}
+#a-ingresar-login{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(50, 50, 43);
+    margin-top:5px;
+    font-size: 15px;
+}
+#a-ingresar-login:hover{ 
+    color: rgb(13, 5, 173);
+}
+.msg-error{
+    color: red;
+}

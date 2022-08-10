@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.428571429;
+    color: #333;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/fondo.jpg');
+    background-size: 100%;
+    
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    height: 1px;
+    margin-bottom: 0.8rem;
+}
+#nav-home-a{
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-basis: 25vw;
+    display: none;
+    justify-content: space-around;
+}
+#nav-home-a a{
+    color: rgb(3, 3, 2);
+    text-decoration: none;
+}

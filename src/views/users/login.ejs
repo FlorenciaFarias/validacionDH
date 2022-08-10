@@ -1,0 +1,25 @@
+<%- include ('../includes/head') %> 
+    <body>
+    
+        <%- include ('../includes/header') %> 
+
+        <main>
+            <section>
+                <form action="/" id="form-login">
+
+                    <section class="section-content-form">
+                        <img class="img-form" src="/assets/pg.svg" alt="">
+                            <label for="email">Ingresá tú email:</label>
+                            <input type="email" name="email" placeholder="juan@example.com">
+
+                            <label for="password">Contraseña:</label>              
+                            <input type="password" name="password" placeholder="Ingresá tu contraseña">
+
+                            <button type="submit" class="form-button">Ingresar</button>
+                        </section>
+                </form>
+            </section>
+        </main>
+        <%- include ('../includes/footer') %> 
+    </body>
+</html>
