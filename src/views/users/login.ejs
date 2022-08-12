@@ -4,18 +4,23 @@
         <%- include ('../includes/header') %> 
 
         <main>
-            <section>
+            <section class="main-section">
+                <h1>Te damos la bienvenida :)</h1>
                 <form action="/" id="form-login">
 
                     <section class="section-content-form">
                         <img class="img-form" src="/assets/pg.svg" alt="">
-                            <label for="email">Ingresá tú email:</label>
-                            <input type="email" name="email" placeholder="juan@example.com">
+                            <label for="email">Email</label>
+                            <input type="email" name="email">
 
-                            <label for="password">Contraseña:</label>              
-                            <input type="password" name="password" placeholder="Ingresá tu contraseña">
+                            <label for="password">Contraseña</label>              
+                            <input type="password" name="password">
 
+                            <a href="/">¿Olvidaste tu contraseña?</a>
                             <button type="submit" class="form-button">Ingresar</button>
+                            <img class="img-logo-form" src="/assets/dh-logo.svg" alt="">
+                        <a href="" class="a-form-bottom">Términos y Condiciones
+                            Política de Privacidad</a>    
                         </section>
                 </form>
             </section>

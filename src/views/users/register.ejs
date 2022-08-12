@@ -6,7 +6,7 @@
         <main>
             <section class="main-section">
                 <h1>Te damos la bienvenida :)</h1>
-                <form action="/users/register" method="" id="form-register" enctype="multipart/form-data">
+                <form action="/users/register" method="POST" id="form-register">
                     
                   <section class="section-content-form">
                         <img class="img-form" src="/assets/pg.svg" alt="">
@@ -14,29 +14,35 @@
                             <label for="nombre">Nombre</label>
                             <input type="text" 
                                 name="nombre" 
-                                value="">
-                            
-        
+                                value="<%= locals.oldData ? oldData.nombre : null %>">
+                                <% if (locals.errors && errors.nombre) { %>
+                                 <p class="msg-error"><%= errors.nombre.msg %> </p>
+                                <% } %>
                             <label for="apellido">Apellido</label>
                             <input type="text" 
                                 name="apellido"  
-                                value="">
-                           
+                                value="<%= locals.oldData ? oldData.apellido : null %>">
+                                <% if (locals.errors && errors.apellido) { %>
+                                    <p class="msg-error"><%= errors.apellido.msg %></p>
+                                   <% } %>
         
-                            <label for="email">E-mail</label>
+                            <label for="email">Email</label>
                             <input type="email" 
                                 name="email" 
-                                value="">
-                            
-        
+                                value="<%= locals.oldData ? oldData.email : null %>">
+                                <% if (locals.errors && errors.email) { %>
+                                    <p class="msg-error"> <%= errors.email.msg %></p>
+                                   <% } %>
                             <label for="password">Contraseña</label>              
                             <input type="password" 
                                 name="password" 
-                                value="">
-                         
-                            <label for="avatar">Foto de perfil</label>              
+                                value="<%= locals.oldData ? oldData.password : null %>">
+                                <% if (locals.errors && errors.password) { %>
+                                    <p class="msg-error"><%= errors.password.msg %></p>
+                                   <% } %>
+                            <!-- <label for="avatar">Foto de perfil</label>              
                             <input type="file" 
-                                name="avatar">
+                                name="avatar"> -->
                              
                             
                             <button type="submit" class="form-button">Registrarme</button>

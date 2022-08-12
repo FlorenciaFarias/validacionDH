@@ -15,7 +15,8 @@ main .main-section{
 form{
     width: 24%;
     margin: auto;
-    
+    display: flex;
+    justify-items: center;
   
 }
 #form-login #form-register, .section-content-form{
